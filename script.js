@@ -8,8 +8,8 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = true;
 
 function startGame() {
-    player1 = document.getElementById("player-1").value || "Player 1";
-    player2 = document.getElementById("player-2").value || "Player 2";
+    player1 = document.getElementById("player-1").value || "Player1";
+    player2 = document.getElementById("player-2").value || "Player2";
 
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameScreen").style.display = "block";
@@ -39,7 +39,7 @@ function handleCellClick(event) {
     cell.innerText = currentSymbol;
 
     if (checkWinner()) {
-        document.getElementById("message").innerText = `${currentPlayer}, congratulations you won! 🎉`;
+        document.getElementById("message").innerText = `${currentPlayer}, congratulations you won! `;
         gameActive = false;
         return;
     }
