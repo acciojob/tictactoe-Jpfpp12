@@ -39,7 +39,7 @@ function handleCellClick(event) {
     cell.innerText = currentSymbol;
 
     if (checkWinner()) {
-        document.getElementById("message").innerText = `${currentPlayer}, congratulations you won! `;
+        document.getElementById("message").innerText = `${currentPlayer} congratulations you won! `;
         gameActive = false;
         return;
     }
