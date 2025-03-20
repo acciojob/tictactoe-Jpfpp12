@@ -15,8 +15,8 @@ function startGame() {
     document.getElementById("gameScreen").style.display = "block";
 
     currentPlayer = player1;
-    currentSymbol = "X";
-    document.getElementById("message").innerText = `${currentPlayer}, you're up!`;
+    currentSymbol = "x";
+    document.getElementById("message").innerText = `${currentPlayer}, you're up`;
 
     document.querySelectorAll(".cell").forEach(cell => {
         cell.innerText = "";
@@ -54,8 +54,8 @@ function handleCellClick(event) {
 
 function switchPlayer() {
     currentPlayer = currentPlayer === player1 ? player2 : player1;
-    currentSymbol = currentSymbol === "X" ? "O" : "X";
-    document.getElementById("message").innerText = `${currentPlayer}, you're up!`;
+    currentSymbol = currentSymbol === "x" ? "o" : "x";
+    document.getElementById("message").innerText = `${currentPlayer}, you're up`;
 }
 
 function checkWinner() {
