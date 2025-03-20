@@ -8,8 +8,8 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = true;
 
 function startGame() {
-    player1 = document.getElementById("player-1").value || "Player1";
-    player2 = document.getElementById("player-2").value || "Player2";
+    player1 = document.getElementById("player1").value || "Player1";
+    player2 = document.getElementById("player2").value || "Player2";
 
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("gameScreen").style.display = "block";
